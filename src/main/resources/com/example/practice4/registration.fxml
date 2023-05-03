@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="Infinity" maxWidth="Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practice4.registration">
+
+    <center>
+        <StackPane>
+            <ImageView fx:id="background" preserveRatio="false">
+                <image>
+                    <Image url="@uiu-transformed.jpeg" />
+                </image>
+            </ImageView>
+         <ImageView fx:id="overlay" opacity="0.6" preserveRatio="false">
+            <image>
+               <Image url="@overlay.jpg" />
+            </image>
+         </ImageView>
+            <GridPane alignment="center" hgap="50.0" vgap="50.0">
+
+                      <Label fx:id="label1" style="-fx-background-color: #e4d1d1;" styleClass="Style.css" stylesheets="@Style.css" text="Registration" textFill="#d76b6b" underline="true" GridPane.columnSpan="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+
+                      <Label style="-fx-background-color: #e4d1d1;" text="Username:" textFill="#d76b6b" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+                <TextField fx:id="tf_username" opacity="0.8" style="-fx-background-color: #e8c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                      <Label style="-fx-background-color: #e4d1d1;" text="ID:" textFill="#d76b6b" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+                <TextField fx:id="tf_id" opacity="0.8" style="-fx-background-color: #e8c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                      <Label style="-fx-background-color: #e4d1d1;" text="Password:" textFill="#d76b6b" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+                <PasswordField fx:id="tf_password" opacity="0.8" style="-fx-background-color: #e8c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                      <Button onAction="#registered" style="-fx-background-color: #d76b6b; -fx-cursor: hand;" text="Register" textFill="#e4d1d1" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+
+                      <Label style="-fx-background-color: #04b2b2;" text="Login" textFill="#085454" underline="true" GridPane.columnIndex="3" GridPane.columnSpan="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+
+                      <Label style="-fx-background-color: #04b2b2;" text="Username:" textFill="#085454" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+                <TextField opacity="0.8" style="-fx-background-color: #cff2f2;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+
+                      <Label style="-fx-background-color: #04b2b2;" text="Password:" textFill="#085454" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+                <PasswordField opacity="0.8" style="-fx-background-color: #cff2f2;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+
+                      <Button style="-fx-background-color: #085454; -fx-cursor: hand;" text="Login" textFill="#04b2b2" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+
+                      <Button onAction="#tictactoe2PlayerOffline" style="-fx-background-color: #6f6c6c; -fx-cursor: hand;" text="Play without login" textFill="#e8e4e4" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Separator opacity="0.0" orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" textAlignment="CENTER" GridPane.columnIndex="4" />
+                <columnConstraints>
+                    <ColumnConstraints />
+                    <ColumnConstraints />
+                    <ColumnConstraints />
+                    <ColumnConstraints />
+               <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints maxHeight="42.0" minHeight="0.0" prefHeight="28.0" />
+                    <RowConstraints maxHeight="239.0" minHeight="197.0" prefHeight="211.0" />
+                </rowConstraints>
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            </GridPane>
+        </StackPane>
+    </center>
+
+</BorderPane>

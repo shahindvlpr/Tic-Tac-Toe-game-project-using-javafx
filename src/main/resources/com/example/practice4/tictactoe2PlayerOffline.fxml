@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="Infinity" maxWidth="Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practice4.tictactoe2PlayerOffline">
+
+    <center>
+        <StackPane>
+            <ImageView fx:id="background" preserveRatio="false">
+                <image>
+                    <Image url="@t3.jpg" />
+                </image>
+            </ImageView>
+            <GridPane alignment="center">
+                <columnConstraints>
+               <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+               <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+               <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+               <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+               <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+                </columnConstraints>
+                <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="150.0" />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+               <RowConstraints />
+               <RowConstraints minHeight="10.0" prefHeight="150.0" />
+               <RowConstraints minHeight="10.0" prefHeight="150.0" />
+               <RowConstraints minHeight="10.0" prefHeight="150.0" />
+                </rowConstraints>
+            <children>
+               <Button fx:id="b1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="1">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="2">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="3">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <Button fx:id="b6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkIfGameIsOver" style="-fx-background-color: #92c63d;" textFill="#400dc3" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                  <font>
+                     <Font name="Verdana Bold" size="65" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </GridPane.margin></Button>
+               <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                  </GridPane.margin>
+                  <image>
+                     <Image url="@Player1.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" smooth="false" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                  </GridPane.margin>
+                  <image>
+                     <Image url="@p2.png" />
+                  </image>
+                  <viewport>
+                     <Rectangle2D />
+                  </viewport>
+               </ImageView>
+               <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #e13b2f;" text="X TURN" textAlignment="CENTER" textFill="#fffdfd" fx:id="xturn">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets left="20.0" right="20.0" />
+                  </GridPane.margin>
+               </Label>
+               <Label fx:id="oturn" alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ee40bd;" text="O TURN" textAlignment="CENTER" textFill="#f2f2f2" GridPane.columnIndex="4">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets left="20.0" right="20.0" />
+                  </GridPane.margin>
+               </Label>
+               <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #e13b2f;" text="Player 1" textAlignment="CENTER" textFill="#fffdfd" GridPane.rowIndex="8">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets left="20.0" right="20.0" />
+                  </GridPane.margin>
+               </Label>
+               <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ee40bd;" text="Player 2" textAlignment="CENTER" textFill="#f2f2f2" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets left="20.0" right="20.0" />
+                  </GridPane.margin>
+               </Label>
+               <Button fx:id="playagain" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#restartGame" style="-fx-background-color: #279090;" text="Play Again" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets left="30.0" right="30.0" />
+                  </GridPane.margin>
+               </Button>
+               <Button fx:id="restart" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#restartGame" style="-fx-background-color: #279090;" text="Restart" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets left="30.0" right="30.0" />
+                  </GridPane.margin>
+               </Button>
+               <Label fx:id="result" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Tic-Tac-Toe" textFill="#142ed7" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                  <font>
+                     <Font name="System Bold Italic" size="24.0" />
+                  </font>
+               </Label>
+               <Button fx:id="mainMenu" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#registration" style="-fx-background-color: #279090;" text="Main Menu" textFill="#085454" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                  <GridPane.margin>
+                     <Insets left="30.0" right="30.0" />
+                  </GridPane.margin>
+               </Button>
+            </children>
+            </GridPane>
+        </StackPane>
+    </center>
+
+</BorderPane>
